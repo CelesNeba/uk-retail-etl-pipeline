@@ -5,6 +5,17 @@
 Retail supermarkets in the UK generate vast amounts of pricing and sales data daily, but struggle to monitor pricing trends, track competitor products, and identify inflationary patterns because sales and pricing data are scattered across multiple supermarkets in inconsistent formats and enormous volumes. Without a structured workflow, manually consolidating this information is time-consuming, error-prone, and delays business decisions. An ETL pipeline is essential to ***Extract*** data from disparate sources, ***Transform*** it into clean, standardized tables, and ***Load*** it into an analytics-ready database, enabling timely, accurate insights and strategic decision-making.
 
 
+## Business questions to answer
+
+1. Which supermarkets have the highest average prices for products?
+
+2. How do prices for the same product vary across different supermarkets?
+
+3. Are there noticeable price trends or inflation patterns over the 90-day period?
+
+3. Which products are the best-selling or most frequently priced?
+
+4. Are there pricing outliers that could indicate errors, promotions, or anomalies?
 
 
 ## Project Goal
@@ -15,7 +26,39 @@ Retail supermarkets in the UK generate vast amounts of pricing and sales data da
 - Enable advanced analytics and **interactive Power BI dashboards**.  
 - Demonstrate best practices in retail data engineering for portfolio presentation.
 
----
+
+
+
+## Expected outcomes
+
+- **Clean, standardized dataset** for UK retail prices  
+- **Robust dimension and fact tables** supporting analytics    
+- **Interactive Power BI dashboards** for business insights  
+- **Reproducible, portfolio-ready ETL project** demonstrating best practices  
+
+
+## How to run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/CelesNeba/uk-retail-etl-pipeline.git
+cd uk-retail-etl-pipeline
+
+2. Install Python dependencies
+ - pip install -r requirements.txt
+3. Run ETL scripts in order
+python .\etl\extract_generate_data.py
+python .\etl\transform_clean.py
+python .\etl\load_to_staging.py
+python .\etl\load_to_analytics.py
+
+4. ***Explore the project files*** to review the ETL workflow and understand the code logic behind each stage 
+
+
+
+
+
 
 ## Tools & technologies used
 
@@ -26,7 +69,7 @@ Retail supermarkets in the UK generate vast amounts of pricing and sales data da
 | Visualization | Power BI |
 | Version Control | GitHub |
 
----
+
 
 ## Dataset: (generated data)
 
@@ -110,6 +153,7 @@ uk-retail-etl-pipeline/
 ├── requirements.txt # Python dependencies
 
 └── .gitignore # Git ignore rules
+
 
 
 
