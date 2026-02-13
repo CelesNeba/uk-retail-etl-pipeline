@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-Retail supermarkets in the UK generate vast amounts of pricing and sales data daily, but struggle to monitor pricing trends, track competitor products, and identify inflationary patterns because sales and pricing data are scattered across multiple supermarkets in inconsistent formats and enormous volumes. Without a structured workflow, manually consolidating this information is time-consuming, error-prone, and delays business decisions. An ETL pipeline is essential to *Extract* data from disparate sources, *Transform* it into clean, standardized tables, and *Load* it into an analytics-ready database—enabling timely, accurate insights and strategic decision-making.
+Retail supermarkets in the UK generate vast amounts of pricing and sales data daily, but struggle to monitor pricing trends, track competitor products, and identify inflationary patterns because sales and pricing data are scattered across multiple supermarkets in inconsistent formats and enormous volumes. Without a structured workflow, manually consolidating this information is time-consuming, error-prone, and delays business decisions. An ETL pipeline is essential to #*Extract* data from disparate sources, *Transform* it into clean, standardized tables, and *Load* it into an analytics-ready database—enabling timely, accurate insights and strategic decision-making.
 
 
 
@@ -72,4 +72,5 @@ This project follows the **classic ETL workflow**:
 ---
 
 ## Project Structure
+
 
