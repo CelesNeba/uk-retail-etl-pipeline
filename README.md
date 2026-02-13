@@ -75,6 +75,7 @@ This project follows the **classic ETL workflow**:
 ## Project structure in folders
 
 uk-retail-etl-pipeline/
+
 │
 ├── etl/ # ETL scripts
 
@@ -109,6 +110,7 @@ uk-retail-etl-pipeline/
 ├── requirements.txt # Python dependencies
 
 └── .gitignore # Git ignore rules
+
 
 
 
