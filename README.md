@@ -17,7 +17,7 @@ Retail supermarkets in the UK generate vast amounts of pricing and sales data da
 
 ---
 
-## Tools & Technologies
+## Tools & technologies used
 
 | Layer | Tools |
 |-------|-------|
@@ -28,9 +28,9 @@ Retail supermarkets in the UK generate vast amounts of pricing and sales data da
 
 ---
 
-## Dataset
+## Dataset: (generated data)
 
-> **Reason for using generated data:**  
+> ### Reason for using generated data:  
 
 The publicly available Kaggle dataset had over 90 million rows, which MySQL could not handle on a local setup (it kept crashing). By generating a **smaller but realistic dataset**, we retain the same structure and information while making it manageable for ETL development and testing.
 
@@ -39,9 +39,9 @@ The publicly available Kaggle dataset had over 90 million rows, which MySQL coul
 - **Timeframe:** 90 days  
 - **Output:** CSV files in `data/raw` and `data/processed`
 
----
 
-## ETL Pipeline
+
+## ETL pipeline
 
 This project follows the **classic ETL workflow**:
 
@@ -62,16 +62,41 @@ This project follows the **classic ETL workflow**:
 - Create **dimension tables** in analytics database:
   - `dim_supermarket`  
   - `dim_product`  
-  - `dim_date`  
+  - `dim_date`
+    
 
 ### **3️⃣ Load**
 - Load transformed data into **analytics schema** (`load_to_analytics.py`)  
 - Build **fact table** and **aggregated tables** for analysis  
 - Optimized for querying in Power BI dashboards  
 
----
 
-## Project Structure
+
+## Project structure in folders
+
+uk-retail-etl-pipeline/
+│
+├── etl/ # ETL scripts
+│ ├── extract_generate_data.py
+│ ├── load_to_staging.py
+│ ├── transform_clean.py
+│ └── load_to_analytics.py
+│
+├── data/ # Datasets
+│ ├── raw/ # Raw CSV files
+│ └── processed/ # Cleaned CSV files
+│
+├── sql/ # SQL scripts for staging & analytics
+│
+├── notebooks/ # Jupyter notebooks for analysis & testing
+│
+├── dashboards/ # Power BI dashboards
+│ └── Power BI dashboard.pbix
+│
+├── README.md # Project overview and instructions
+├── requirements.txt # Python dependencies
+└── .gitignore # Git ignore rules
+
 
 
 
