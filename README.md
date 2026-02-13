@@ -77,25 +77,37 @@ This project follows the **classic ETL workflow**:
 uk-retail-etl-pipeline/
 │
 ├── etl/ # ETL scripts
+
 │ ├── extract_generate_data.py
+
 │ ├── load_to_staging.py
+
 │ ├── transform_clean.py
+
 │ └── load_to_analytics.py
+
 │
 ├── data/ # Datasets
+
 │ ├── raw/ # Raw CSV files
 │ └── processed/ # Cleaned CSV files
 │
 ├── sql/ # SQL scripts for staging & analytics
 │
+
 ├── notebooks/ # Jupyter notebooks for analysis & testing
 │
+
 ├── dashboards/ # Power BI dashboards
+
 │ └── Power BI dashboard.pbix
 │
+
 ├── README.md # Project overview and instructions
+
 ├── requirements.txt # Python dependencies
 └── .gitignore # Git ignore rules
+
 
 
 
