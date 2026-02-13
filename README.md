@@ -49,13 +49,13 @@ cd uk-retail-etl-pipeline
  - pip install -r requirements.txt
 3. Run ETL scripts in order
 
-python .\etl\extract_generate_data.py
+- python .\etl\extract_generate_data.py
 
-python .\etl\transform_clean.py
+- python .\etl\transform_clean.py
 
-python .\etl\load_to_staging.py
+- python .\etl\load_to_staging.py
 
-python .\etl\load_to_analytics.py
+- python .\etl\load_to_analytics.py
 
 4. ***Explore the project files*** to review the ETL workflow and understand the code logic behind each stage 
 
@@ -160,6 +160,24 @@ uk-retail-etl-pipeline/
 
 
 
+## Author: Celestine Neba | ETL, Data Engineering & Analytics | BSc in Computer Science
+
+
+About the Author
+
+Celestine  Neba is a data engineer and analytics specialist with experience designing and implementing end-to-end ETL pipelines and building data-driven dashboards. For this project, I was responsible for:
+
+- Generating and structuring realistic retail datasets.
+
+- Designing and implementing the ETL workflow (Extract → Transform → Load).
+
+- Cleaning, transforming, and loading data into staging and analytics databases.
+
+- Building dimension and fact tables optimized for analytics.
+
+- Creating interactive Power BI dashboards for business insights.
+
+**I am passionate** about turning raw data into actionable insights and applying best practices in data engineering for scalable, reproducible solutions.
 
 
 
