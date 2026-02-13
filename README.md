@@ -41,7 +41,7 @@ Retail supermarkets in the UK generate vast amounts of pricing and sales data da
 
 1. Clone the repository:
 
-```bash
+
 git clone https://github.com/CelesNeba/uk-retail-etl-pipeline.git
 cd uk-retail-etl-pipeline
 
@@ -153,6 +153,7 @@ uk-retail-etl-pipeline/
 ├── requirements.txt # Python dependencies
 
 └── .gitignore # Git ignore rules
+
 
 
 
