@@ -171,10 +171,11 @@ The analysis of UK supermarket pricing data reveals significant opportunities fo
 
 
 
-## Author: Celestine Neba | ETL, Data Engineering & Analytics | BSc in Computer Science
+# Author: 
+## Celestine Neba | ETL, Data Engineering & Analytics | BSc in Computer Science
 
 
-About the Author
+### About the author
 
 Celestine  Neba is a data engineer and analytics specialist with experience designing and implementing end-to-end ETL pipelines and building data-driven dashboards. For this project, I was responsible for:
 
@@ -189,6 +190,7 @@ Celestine  Neba is a data engineer and analytics specialist with experience desi
 - Creating interactive Power BI dashboards for business insights.
 
 **I am passionate** about turning raw data into actionable insights and applying best practices in data engineering for scalable, reproducible solutions.
+
 
 
 
