@@ -92,6 +92,7 @@ uk-retail-etl-pipeline/
 │ ├── raw/ # Raw CSV files
 │ └── processed/ # Cleaned CSV files
 │
+
 ├── sql/ # SQL scripts for staging & analytics
 │
 
@@ -106,7 +107,9 @@ uk-retail-etl-pipeline/
 ├── README.md # Project overview and instructions
 
 ├── requirements.txt # Python dependencies
+
 └── .gitignore # Git ignore rules
+
 
 
 
