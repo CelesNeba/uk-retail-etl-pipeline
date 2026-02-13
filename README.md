@@ -1,0 +1,75 @@
+# UK Supermarket retail ETL and analytics pipeline
+
+## Problem statement
+
+Retail supermarkets in the UK generate vast amounts of pricing and sales data daily, but struggle to monitor pricing trends, track competitor products, and identify inflationary patterns because sales and pricing data are scattered across multiple supermarkets in inconsistent formats and enormous volumes. Without a structured workflow, manually consolidating this information is time-consuming, error-prone, and delays business decisions. An ETL pipeline is essential to *Extract* data from disparate sources, *Transform* it into clean, standardized tables, and *Load* it into an analytics-ready database—enabling timely, accurate insights and strategic decision-making.
+
+
+
+
+## Project Goal
+
+- Build a scalable and **reproducible ETL pipeline** for UK retail data.  
+- Generate clean, standardized, and queryable datasets.  
+- Create supporting **dimension and fact tables** in MySQL.  
+- Enable advanced analytics and **interactive Power BI dashboards**.  
+- Demonstrate best practices in retail data engineering for portfolio presentation.
+
+---
+
+## Tools & Technologies
+
+| Layer | Tools |
+|-------|-------|
+| Data Processing & ETL | Python, Jupyter Notebook, pandas, SQLAlchemy |
+| Database | MySQL (Staging + Analytics) |
+| Visualization | Power BI |
+| Version Control | GitHub |
+
+---
+
+## Dataset
+
+> **Reason for using generated data:**  
+
+The publicly available Kaggle dataset had over 90 million rows, which MySQL could not handle on a local setup (it kept crashing). By generating a **smaller but realistic dataset**, we retain the same structure and information while making it manageable for ETL development and testing.
+
+- **Supermarkets:** Tesco, ASDA, Aldi, Morrisons, Sainsbury  
+- **Products:** 200 synthetic products  
+- **Timeframe:** 90 days  
+- **Output:** CSV files in `data/raw` and `data/processed`
+
+---
+
+## ETL Pipeline
+
+This project follows the **classic ETL workflow**:
+
+### **1️⃣ Extract**
+- Generate synthetic retail data (`extract_generate_data.py`)  
+- Save raw data as CSV in the `data/raw` folder  
+- Structure: `fact_id`, `raw_date`, `supermarket`, `product_name`, `price_gbp`  
+
+### **2️⃣ Transform**
+- Load raw CSV into staging database (`load_to_staging.py`)  
+- Perform **data cleaning** in `transform_clean.py`:
+  - Remove **NULLs**  
+  - Remove invalid prices  
+  - Drop duplicates  
+  - Detect and remove **outliers** (IQR method)  
+- Save clean CSV to `data/processed`  
+
+- Create **dimension tables** in analytics database:
+  - `dim_supermarket`  
+  - `dim_product`  
+  - `dim_date`  
+
+### **3️⃣ Load**
+- Load transformed data into **analytics schema** (`load_to_analytics.py`)  
+- Build **fact table** and **aggregated tables** for analysis  
+- Optimized for querying in Power BI dashboards  
+
+---
+
+## Project Structure
+
