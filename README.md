@@ -48,9 +48,13 @@ cd uk-retail-etl-pipeline
 2. Install Python dependencies
  - pip install -r requirements.txt
 3. Run ETL scripts in order
+
 python .\etl\extract_generate_data.py
+
 python .\etl\transform_clean.py
+
 python .\etl\load_to_staging.py
+
 python .\etl\load_to_analytics.py
 
 4. ***Explore the project files*** to review the ETL workflow and understand the code logic behind each stage 
@@ -153,6 +157,7 @@ uk-retail-etl-pipeline/
 ├── requirements.txt # Python dependencies
 
 └── .gitignore # Git ignore rules
+
 
 
 
