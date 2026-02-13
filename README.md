@@ -165,7 +165,7 @@ uk-retail-etl-pipeline/
 
 ## My recommendation based on the analysis:
 
-The analysis of UK supermarket pricing data reveals significant opportunities for strategic optimization. The analysis highlights an overall average price of £25 across key products, with notable price variations between supermarkets like Aldi, ASDA, Morrisons, Sainsbury's, and Tesco. By focusing on the product price comparison across supermarkets, decision makers  can identify products where  pricing is uncompetitive. I recommend a deeper dive into the daily average price trends to understand the impact of promotional activities and adjust pricing strategies to maximize profitability and market share, while maintaining a competitive edge in the UK retail landscape.
+The analysis of UK supermarket pricing data reveals significant opportunities for strategic optimization. The analysis highlights an overall average price of **£25** across key products, with notable price variations between supermarkets like **Aldi**, **ASDA**, **Morrisons**, **Sainsbury's**, and **Tesco**. By focusing on the product price comparison across supermarkets, decision makers  can identify products where  pricing is uncompetitive. I recommend a deeper dive into the daily average price trends to understand the impact of promotional activities and adjust pricing strategies to maximize profitability and market share, while maintaining a competitive edge in the UK retail landscape.
 
 
 
@@ -190,6 +190,7 @@ Celestine  Neba is a data engineer and analytics specialist with experience desi
 - Creating interactive Power BI dashboards for business insights.
 
 **I am passionate** about turning raw data into actionable insights and applying best practices in data engineering for scalable, reproducible solutions.
+
 
 
 
