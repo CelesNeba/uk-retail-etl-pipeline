@@ -29,7 +29,7 @@ Retail supermarkets in the UK generate vast amounts of pricing and sales data da
 
 
 
-## Expected outcomes
+## Expected outcome
 
 - **Clean, standardized dataset** for UK retail prices  
 - **Robust dimension and fact tables** supporting analytics    
@@ -190,6 +190,7 @@ Celestine  Neba is a data engineer and analytics specialist with experience desi
 - Creating interactive Power BI dashboards for business insights.
 
 **I am passionate** about turning raw data into actionable insights and applying best practices in data engineering for scalable, reproducible solutions.
+
 
 
 
